@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+import ReactPlayer from 'react-player'
 import './App.css';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import Home from './pages/Home';
+import Userinterest from './pages/Userinterest';
+import Rain from './components/Rain';
+import Nav from './components/Nav';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+       <Rain/>
+        <div className="App">
+            <Nav/>
+            <div className="entire-body">
+              <Switch>
+                  <Route exact path="/">
+                     <Home/>
+                     <Userinterest/>
+                  </Route>
+                  <Route path="/userinterest">
+                      <Userinterest/>
+                  </Route>
+              </Switch>
+            </div>
+            <div className="react-player-holder">
+              <ReactPlayer width="100%" height="100%" url="https://www.youtube-nocookie.com/embed/KzHzGCSPED4"/>
+            </div>
+        </div>
+    </Router>
   );
 }
 
