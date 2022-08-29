@@ -11,6 +11,9 @@
 	--primary-color-2: #1a2537;
 }
 
+button:active{
+	outline:none;
+}
 
 body {
 	margin: 0;
@@ -144,7 +147,7 @@ body {
 
 
 .timesabdintlogo img{
-	width: 4.5em;
+	width: 3.3em;
 }
 
 /* 
