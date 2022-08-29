@@ -24,10 +24,12 @@ const Nav = () => {
                     </div>
 
                     <Link to="/" className="logo-header">
-                        <img src="/images/Icon transparency 2.png" alt="homes for life" className="logo" />
+                        <img src="/images/Logo transparency 1.png" alt="homes for life" className="logo" />
                     </Link>
                      
-                    <Link to="/Quote" className="btn-header"></Link>
+                    <Link to="/Quote" className="timesabdintlogo">
+                         <img src="/images/Icon transparency 2.png" alt="homes for life" className="logo" />
+                    </Link>
                 </div>
             </div>
         </div>
