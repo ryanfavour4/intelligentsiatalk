@@ -7,6 +7,7 @@
 :root {
 	--white: #E9E9E9;
 	--black: #020202;
+	--silver: silver;
 	--primary-color-1: #B0A180;
 	--primary-color-2: #1a2537;
 }
@@ -30,6 +31,54 @@ body {
 	position: relative;
 	height: 100%;
 	background-size: cover;
+}
+
+body::-webkit-scrollbar{
+	background: var(--primary-color-2);
+	width: 9px;
+}
+
+body::-webkit-scrollbar-thumb{
+	background: var(--primary-color-1);
+}
+
+
+.load-screen-body{
+	position: fixed;
+	z-index: 100;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	background-color: var(--primary-color-2);
+}
+
+.gone{
+	display: none;
+}
+
+.center-loading-content{
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.center-loading-content img{
+	width:17em;
+	animation: zoomimg 2s linear infinite;
+}
+
+@keyframes zoomimg {
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.15);
+	}
+	100%{
+		transform: scale(1);
+	}
 }
 
 .container {
@@ -150,64 +199,6 @@ body {
 	width: 3.3em;
 }
 
-/* 
-.btn-header {
-	background: var(--primary-color-2);
-	/* color here
-	text-decoration: none;
-	padding: 1.2em;
-	border-radius: 100%;
-	height: 1.5em;
-	width: 1.5em;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	align-self: center;
-	overflow: hidden;
-	animation: rotating 3s linear infinite;
-	transition: all 1s ease;
-}
-
-
-@keyframes rotating {
-	0% {
-		transform: rotate(0);
-	}
-
-	100% {
-		transform: rotate(360deg);
-	}
-
-}
-
-
-.btn-header::before {
-	content: '';
-	background: var(--primary-color-2);
-	/* color here 
-	height: 1.3em;
-	z-index: 0;
-	border-top-left-radius: 200px;
-	width: 1.3em;
-	transform: translate(-9.5px, -9.5px);
-	display: block;
-	position: absolute;
-}
-
-.btn-header::after {
-	content: '';
-	background: var(--white);
-	/* color here 
-	height: 1.3em;
-	z-index: 0;
-	border-bottom-right-radius: 200px;
-	width: 1.3em;
-	transform: translate(9.3px, 9.3px);
-	display: block;
-	position: absolute;
-} */
-
 /* NAV JS STYLE END */
 
 
@@ -225,7 +216,7 @@ body {
 	right: 0;
 	bottom: 0;
 	z-index: 20;
-	background: var(--white);
+	background: var(--primary-color-2);
 	height: 100%;
 	transition: all 0.5s ease;
 	transform: translateX(-100vw);
@@ -233,7 +224,38 @@ body {
 
 .slideShows{
 	transform: translateX(-0vw);
+	box-shadow: -3px 2px 4px 3px var(--primary-color-1) ;
 }
+
+.watch-text-grey{
+	color: var(--silver);
+	font-weight: 450;
+	letter-spacing: 2px;
+	margin-bottom: 1em;
+}
+
+.watch-videos-ul{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	line-height: 2.5em;
+	list-style-type: none;
+}
+
+.watch-videos-ul a{
+	text-decoration: none;
+	color: var(--white);
+	font-weight: 500;
+}
+
+.watch-section{
+	margin-left: 2rem;
+}
+
+.first-vav-box{
+	border-bottom: 1px solid var(--primary-color-1);
+	padding: 1.5em 0;
+}
+
 
 /* SLIDES JS STYLING END */
 
@@ -461,20 +483,141 @@ section.how-it-works {
 	}
 }
 
-
-
 /* TRIANGLERS JS STYLING END */
 
 
 
 
 
+/* WORDINGS WALL JS AND WORDINGS JS */
+
+
+.word-wallbox{
+	background: url('../public/images/close-up-white-marble-textured-wall.jpg');
+	border: 1px groove var(--primary-color-2);
+	width: 16em;
+	height: 17em;
+	max-width: 300px;
+	background-size: 100%;
+	aspect-ratio: 1/1 !important;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 5px;
+	text-align: center;
+	position: relative;
+	margin: 1em 2em;
+	overflow: hidden;
+}
+
+.word-wall-section{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex-slide-box{
+	overflow: auto;
+}
+
+.flex-slide-box::-webkit-scrollbar{
+	background: var(--primary-color-2);
+	height: 8px;
+}
+
+.flex-slide-box::-webkit-scrollbar-thumb{
+	background: var(--primary-color-1);
+}
+
+.top-marble{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	margin: auto 0;
+	height: 50%;
+	color: var(--primary-color-2);
+}
+
+.word-of-wisdom{
+	margin-top: 10px;
+	padding: 0 24px;
+	width: 90%;
+}
+
+.top-marble::before{
+	content: '';
+	position: absolute;
+	border-right: 3px groove var(--primary-color-2);
+	width: 60%;
+	height: 40%;
+	right: 20px;
+	animation: updownsticksright 2s linear infinite;
+	animation-delay: 2s;
+	top: 5em;
+}
+
+.top-marble::after{
+	content: '';
+	position: absolute;
+	border-left: 3px groove var(--primary-color-2);
+	width: 60%;
+	height: 40%;
+	left: 20px;
+	animation: updownsticksleft 2s linear infinite;
+	bottom: 10em;
+}
+
+.banner-bottom{
+	background: var(--primary-color-2);
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content:center;
+	padding: 10px;
+}
+
+.banner-bottom img{
+	width: 10rem;
+}
+
+
+@keyframes updownsticksleft {
+	0%{
+		bottom: 10em;	
+	}
+	50%{
+		bottom: 5em;
+	}
+	100%{
+		bottom: 10em;
+	}
+}
+
+@keyframes updownsticksright {
+	0%{
+		top: 5em;	
+	}
+	50%{
+		top: 0em;
+	}
+	100%{
+		top: 5em;
+	}
+}
+
+/* WORDINGS WALL JS AND WORDINGS JS END */
 
 
 
 
 
-.react-player-holder {
+
+
+
+.react-player-holder{
 	width: 90vw;
 	max-width: 800px;
 	border: 4px solid blue;
@@ -530,6 +673,10 @@ section.how-it-works {
 	.desc-sub-ad-copy {
 		font-size: 1.6rem
 	} 
+
+	.word-wall-section{
+		display: flex;
+	}
 
 
 }

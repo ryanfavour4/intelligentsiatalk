@@ -1,9 +1,15 @@
 import ReactPlayer from 'react-player'
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import Home from './pages/Home';
-import Userinterest from './pages/Userinterest';
-import Rain from './components/Rain';
+
 import Nav from './components/Nav';
+import Rain from './components/Rain';
+
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Speakers from './pages/Speakers';
+
+
 
 function App() {
   return (
@@ -15,10 +21,15 @@ function App() {
               <Switch>
                   <Route exact path="/">
                      <Home/>
-                     <Userinterest/>
                   </Route>
-                  <Route path="/userinterest">
-                      <Userinterest/>
+                  <Route path="/About">
+                      <About/>
+                  </Route>
+                  <Route path="/Contact">
+                      <Contact/>
+                  </Route>
+                  <Route path="/Speakers">
+                      <Speakers/>
                   </Route>
               </Switch>
             </div>
