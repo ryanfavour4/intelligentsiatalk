@@ -12,12 +12,12 @@
 	--primary-color-2: #1a2537;
 }
 
-html{
+html {
 	overflow-x: hidden;
 }
 
-button:active{
-	outline:none;
+button:active {
+	outline: none;
 }
 
 body {
@@ -37,17 +37,17 @@ body {
 	background-size: cover;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
 	background: var(--primary-color-2);
 	width: 9px;
 }
 
-body::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb {
 	background: var(--primary-color-1);
 }
 
 
-.load-screen-body{
+.load-screen-body {
 	position: fixed;
 	z-index: 100;
 	width: 100vw;
@@ -56,11 +56,11 @@ body::-webkit-scrollbar-thumb{
 	background-color: var(--primary-color-2);
 }
 
-.gone{
+.gone {
 	display: none;
 }
 
-.center-loading-content{
+.center-loading-content {
 	display: flex;
 	height: 100%;
 	flex-direction: column;
@@ -68,19 +68,21 @@ body::-webkit-scrollbar-thumb{
 	align-items: center;
 }
 
-.center-loading-content img{
-	width:17em;
+.center-loading-content img {
+	width: 17em;
 	animation: zoomimg 2s linear infinite;
 }
 
 @keyframes zoomimg {
-	0%{
+	0% {
 		transform: scale(1);
 	}
-	50%{
+
+	50% {
 		transform: scale(1.15);
 	}
-	100%{
+
+	100% {
 		transform: scale(1);
 	}
 }
@@ -199,7 +201,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 
-.timesabdintlogo img{
+.timesabdintlogo img {
 	width: 3.3em;
 }
 
@@ -209,11 +211,11 @@ body::-webkit-scrollbar-thumb{
 
 /* SLIDES JS STYLING  */
 
-.slide-wrapper{
-	padding:1em 0.1px;
+.slide-wrapper {
+	padding: 1em 0.1px;
 	position: fixed;
 	width: 100%;
-	margin-top:62.5px;
+	margin-top: 62.5px;
 	max-width: 600px;
 	top: 0;
 	left: 0;
@@ -226,36 +228,36 @@ body::-webkit-scrollbar-thumb{
 	transform: translateX(-100vw);
 }
 
-.slideShows{
+.slideShows {
 	transform: translateX(-0vw);
-	box-shadow: -3px 2px 4px 3px var(--primary-color-1) ;
+	box-shadow: -3px 2px 4px 3px var(--primary-color-1);
 }
 
-.watch-text-grey{
+.watch-text-grey {
 	color: var(--silver);
 	font-weight: 450;
 	letter-spacing: 2px;
 	margin-bottom: 1em;
 }
 
-.watch-videos-ul{
+.watch-videos-ul {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	line-height: 2.5em;
 	list-style-type: none;
 }
 
-.watch-videos-ul a{
+.watch-videos-ul a {
 	text-decoration: none;
 	color: var(--white);
 	font-weight: 500;
 }
 
-.watch-section{
+.watch-section {
 	margin-left: 2rem;
 }
 
-.first-vav-box{
+.first-vav-box {
 	border-bottom: 1px solid var(--primary-color-1);
 	padding: 1.5em 0;
 }
@@ -367,13 +369,14 @@ input[type='radio']:checked {
 	opacity: 0.5;
 	cursor: not-allowed;
 }
-.next-button:disabled a{
+
+.next-button:disabled a {
 	opacity: 0.5;
 	pointer-events: none;
 	cursor: not-allowed;
 }
 
-.next-button a{
+.next-button a {
 	color: var(--white);
 	text-decoration: none;
 	font-weight: 600;
@@ -427,14 +430,14 @@ section.how-it-works {
 	border-bottom: 25px solid var(--primary-color-2);
 	border-right: 85.5px solid transparent;
 	border-left: 75px solid var(--white);
-	transform: matrix(0.5,-0.4, 3, 0, -100, 50);
+	transform: matrix(0.5, -0.4, 3, 0, -100, 50);
 	background: transparent;
 	animation: colorChange2 3s linear infinite alternate-reverse;
 }
 
 
 .triangle3 {
-	position:absolute;
+	position: absolute;
 	bottom: 10px;
 	right: 10px;
 	width: 40%;
@@ -451,7 +454,7 @@ section.how-it-works {
 
 
 .triangle4 {
-	position:absolute;
+	position: absolute;
 	right: -80px;
 	top: 10px;
 	width: 40%;
@@ -496,7 +499,7 @@ section.how-it-works {
 /* WORDINGS WALL JS AND WORDINGS JS */
 
 
-.word-wallbox{
+.word-wallbox {
 	background: url('../public/images/close-up-white-marble-textured-wall.jpg');
 	width: 16em;
 	height: 16em;
@@ -513,26 +516,26 @@ section.how-it-works {
 	/* overflow: hidden; */
 }
 
-.word-wall-section{
+.word-wall-section {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.flex-slide-box{
+.flex-slide-box {
 	overflow: auto;
 }
 
-.flex-slide-box::-webkit-scrollbar{
+.flex-slide-box::-webkit-scrollbar {
 	background: var(--primary-color-2);
 	height: 5px;
 }
 
-.flex-slide-box::-webkit-scrollbar-thumb{
+.flex-slide-box::-webkit-scrollbar-thumb {
 	background: var(--primary-color-1);
 }
 
-.top-marble{
+.top-marble {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -542,13 +545,13 @@ section.how-it-works {
 	color: var(--primary-color-2);
 }
 
-.word-of-wisdom{
+.word-of-wisdom {
 	margin-top: 10px;
 	padding: 0 24px;
 	width: 90%;
 }
 
-.top-marble::before{
+.top-marble::before {
 	content: '';
 	position: absolute;
 	border-right: 3px groove var(--primary-color-2);
@@ -560,7 +563,7 @@ section.how-it-works {
 	top: 5em;
 }
 
-.top-marble::after{
+.top-marble::after {
 	content: '';
 	position: absolute;
 	border-left: 3px groove var(--primary-color-2);
@@ -571,41 +574,45 @@ section.how-it-works {
 	bottom: 10em;
 }
 
-.banner-bottom{
+.banner-bottom {
 	background: var(--primary-color-2);
 	width: 16.01em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content:center;
+	justify-content: center;
 	padding: 10px;
 }
 
-.banner-bottom img{
+.banner-bottom img {
 	width: 10rem;
 }
 
 
 @keyframes updownsticksleft {
-	0%{
-		bottom: 10em;	
+	0% {
+		bottom: 10em;
 	}
-	50%{
+
+	50% {
 		bottom: 5em;
 	}
-	100%{
+
+	100% {
 		bottom: 10em;
 	}
 }
 
 @keyframes updownsticksright {
-	0%{
-		top: 5em;	
+	0% {
+		top: 5em;
 	}
-	50%{
+
+	50% {
 		top: 0em;
 	}
-	100%{
+
+	100% {
 		top: 5em;
 	}
 }
@@ -615,16 +622,17 @@ section.how-it-works {
 
 /* INNOVATIVEWORDS JS */
 
-.section-bgblue{
+.section-bgblue {
 	background: var(--primary-color-2);
-	color:var(--white);
+	color: var(--white);
 	min-height: 16em;
-	line-height:180%;
+	line-height: 180%;
 	position: relative;
 	margin-bottom: 5rem;
 }
 
-.gold-blade,.blue-blade{
+.gold-blade,
+.blue-blade {
 	width: 60vw;
 	height: 10em;
 	position: absolute;
@@ -632,45 +640,44 @@ section.how-it-works {
 	z-index: -1;
 }
 
-.cutrule{
-	width:100%;
+.cutrule {
+	width: 100%;
+	outline: none;
 	border: 2px solid var(--primary-color-1);
 }
 
-.gold-blade{
+.gold-blade {
 	background: var(--primary-color-1);
 	right: 0;
-	transform: skewX(35deg);
-	rotate: -20deg;
+	transform: rotate(-20deg) skewX(35deg);
 	right: -20%;
 	bottom: -30px;
 }
 
-.blue-blade{
+.blue-blade {
 	background: var(--primary-color-2);
-	transform: skewX(40deg);
-	rotate: -15deg;
+	transform: 	rotate(-15deg) skewX(40deg);
 	bottom: -50px;
 	width: 80vw;
 }
 
-.intelligentsiaBrand-left{
+.intelligentsiaBrand-left {
 	width: 90%;
-	margin:auto;
+	margin: auto;
 	padding: 2em 0;
 }
 
-.intelligentsiaBrand-left img{
+.intelligentsiaBrand-left img {
 	width: 5em;
 }
 
-.heading-innovative-words{
+.heading-innovative-words {
 	font-family: serif;
 	font-size: 0.9em;
-	font-weight:lighter;
+	font-weight: lighter;
 }
 
-.inner-word-writeup{
+.inner-word-writeup {
 	display: flex;
 	min-height: 15.5em;
 	flex-direction: column;
@@ -681,14 +688,8 @@ section.how-it-works {
 	width: 400px;
 }
 
-
 /* INNOVATIVEWORDS JS END*/
-
-
-
-
-
-.react-player-holder{
+.react-player-holder {
 	width: 90vw;
 	max-width: 800px;
 	border: 4px solid blue;
@@ -720,13 +721,13 @@ section.how-it-works {
 	.logo-header .logo {
 		width: 15rem;
 	}
-	
+
 	.menu-icon {
 		font-size: 3em;
 	}
 
-	.slide-wrapper{
-		margin-top:86.86px;
+	.slide-wrapper {
+		margin-top: 86.86px;
 	}
 
 	.ad-copy-text {
@@ -743,49 +744,50 @@ section.how-it-works {
 
 	.desc-sub-ad-copy {
 		font-size: 1.6rem
-	} 
+	}
 
-	.word-wall-section{
+	.word-wall-section {
 		display: flex;
 	}
-/* 
+
+	/* 
 	.inner-word-writeup{
 		display: flex;
 		flex-direction: row;
 		width: 1000px;
 	} */
-	.section-bgblue{
+	.section-bgblue {
 		display: flex;
 		flex-direction: row-reverse;
 		justify-content: space-around;
 		padding: 2em 0;
 	}
 
-	.intelligentsiaBrand-left{
+	.intelligentsiaBrand-left {
 		width: 50%;
 	}
 
-	.intelligentsiaBrand-left img{
+	.intelligentsiaBrand-left img {
 		width: 10em;
 	}
 
-	
-.gold-blade{
-	background: var(--primary-color-1);
-	right: 0;
-	transform: skewX(35deg);
-	rotate: -10deg;
-	width: 70vw;
-	right: -20%;
-	bottom: -30px;
-}
 
-.blue-blade{
-	background: var(--primary-color-2);
-	transform: skewX(40deg);
-	rotate: -8deg;
-	bottom: -40px;
-	width: 95vw;
-}
+	.gold-blade {
+		background: var(--primary-color-1);
+		right: 0;
+		transform: skewX(35deg);
+		rotate: -10deg;
+		width: 70vw;
+		right: -20%;
+		bottom: -30px;
+	}
+
+	.blue-blade {
+		background: var(--primary-color-2);
+		transform: skewX(40deg);
+		rotate: -8deg;
+		bottom: -40px;
+		width: 95vw;
+	}
 
 }
