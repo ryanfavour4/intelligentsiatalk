@@ -7,7 +7,7 @@ const InnovativeWord = () => {
             </div>
             <div className="container">
             
-            <hr className="cutrule" />
+            <div className="cutrule"></div>
 
             <div className="gold-blade"></div>
             <div className="blue-blade"></div>

@@ -33,9 +33,9 @@ function App() {
                   </Route>
               </Switch>
             </div>
-            <div className="react-player-holder">
-              <ReactPlayer width="100%" height="100%" url="https://www.youtube-nocookie.com/embed/KzHzGCSPED4"/>
-            </div>
+            {/* <div className="react-player-holder"> */}
+              {/* <ReactPlayer width="100%" height="100%" url="https://www.youtube-nocookie.com/embed/KzHzGCSPED4"/> */}
+            {/* </div> */}
         </div>
     </Router>
   );

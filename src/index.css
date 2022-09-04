@@ -655,7 +655,7 @@ section.how-it-works {
 }
 
 .blue-blade {
-	background: var(--primary-color-1);
+	background: var(--primary-color-2);
 	transform: 	rotate(-15deg) skewX(40deg);
 	bottom: -50px;
 	width: 80vw;
