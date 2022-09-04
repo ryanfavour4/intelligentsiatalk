@@ -12,6 +12,10 @@
 	--primary-color-2: #1a2537;
 }
 
+html{
+	overflow-x: hidden;
+}
+
 button:active{
 	outline:none;
 }
@@ -494,12 +498,10 @@ section.how-it-works {
 
 .word-wallbox{
 	background: url('../public/images/close-up-white-marble-textured-wall.jpg');
-	border: 1px groove var(--primary-color-2);
 	width: 16em;
-	height: 17em;
+	height: 16em;
 	max-width: 300px;
 	background-size: 100%;
-	aspect-ratio: 1/1 !important;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -508,7 +510,7 @@ section.how-it-works {
 	text-align: center;
 	position: relative;
 	margin: 1em 2em;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 .word-wall-section{
@@ -523,7 +525,7 @@ section.how-it-works {
 
 .flex-slide-box::-webkit-scrollbar{
 	background: var(--primary-color-2);
-	height: 8px;
+	height: 5px;
 }
 
 .flex-slide-box::-webkit-scrollbar-thumb{
@@ -571,7 +573,7 @@ section.how-it-works {
 
 .banner-bottom{
 	background: var(--primary-color-2);
-	width: 100%;
+	width: 16.01em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -611,7 +613,76 @@ section.how-it-works {
 /* WORDINGS WALL JS AND WORDINGS JS END */
 
 
+/* INNOVATIVEWORDS JS */
 
+.section-bgblue{
+	background: var(--primary-color-2);
+	color:var(--white);
+	min-height: 16em;
+	line-height:180%;
+	position: relative;
+	margin-bottom: 5rem;
+}
+
+.gold-blade,.blue-blade{
+	width: 60vw;
+	height: 10em;
+	position: absolute;
+	bottom: 0;
+	z-index: -1;
+}
+
+.cutrule{
+	width:100%;
+	border: 2px solid var(--primary-color-1);
+}
+
+.gold-blade{
+	background: var(--primary-color-1);
+	right: 0;
+	transform: skewX(35deg);
+	rotate: -20deg;
+	right: -20%;
+	bottom: -30px;
+}
+
+.blue-blade{
+	background: var(--primary-color-2);
+	transform: skewX(40deg);
+	rotate: -15deg;
+	bottom: -50px;
+	width: 80vw;
+}
+
+.intelligentsiaBrand-left{
+	width: 90%;
+	margin:auto;
+	padding: 2em 0;
+}
+
+.intelligentsiaBrand-left img{
+	width: 5em;
+}
+
+.heading-innovative-words{
+	font-family: serif;
+	font-size: 0.9em;
+	font-weight:lighter;
+}
+
+.inner-word-writeup{
+	display: flex;
+	min-height: 15.5em;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	padding: 1em;
+	width: 400px;
+}
+
+
+/* INNOVATIVEWORDS JS END*/
 
 
 
@@ -677,6 +748,44 @@ section.how-it-works {
 	.word-wall-section{
 		display: flex;
 	}
+/* 
+	.inner-word-writeup{
+		display: flex;
+		flex-direction: row;
+		width: 1000px;
+	} */
+	.section-bgblue{
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-around;
+		padding: 2em 0;
+	}
 
+	.intelligentsiaBrand-left{
+		width: 50%;
+	}
+
+	.intelligentsiaBrand-left img{
+		width: 10em;
+	}
+
+	
+.gold-blade{
+	background: var(--primary-color-1);
+	right: 0;
+	transform: skewX(35deg);
+	rotate: -10deg;
+	width: 70vw;
+	right: -20%;
+	bottom: -30px;
+}
+
+.blue-blade{
+	background: var(--primary-color-2);
+	transform: skewX(40deg);
+	rotate: -8deg;
+	bottom: -40px;
+	width: 95vw;
+}
 
 }
