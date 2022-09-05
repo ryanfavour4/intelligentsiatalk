@@ -14,7 +14,7 @@ const Home = () => {
     useEffect(()=>{
         setTimeout(()=>{
             setLoadscreen(false)
-        },7000)
+        },4000)
     },[])
 
     return (

@@ -20,21 +20,16 @@ const Nav = () => {
                         <CgMenuLeft className="menu-icon" />
                     </div>
 
-                    <Link to="/" className="logo-header">
+                <div className="logo-header">
+                    <Link to="/">
                         <img
                             src="/images/Intelligentsiatalklogo.png"
                             alt="homes for life"
                             className="logo"
                         />
                     </Link>
-
-                    <Link to="/About" className="timesabdintlogo">
-                        <img
-                            src="/images/Icon transparency 2.png"
-                            alt="homes for life"
-                            className="logo"
-                        />
-                    </Link>
+                </div>
+                
                 </div>
             </div>
         </div>

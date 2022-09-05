@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 }
 
+
 :root {
 	--white: #E9E9E9;
 	--black: #020202;
@@ -193,8 +194,14 @@ body::-webkit-scrollbar-thumb {
 	padding: 4px 0;
 }
 
+.logo-header{
+	flex: 1;
+	text-align: center;
+}
+
 .logo-header .logo {
 	width: 10rem;
+	margin-right: 45px;
 }
 
 .hb-content {
@@ -599,7 +606,6 @@ section.how-it-works {
 	width: 10rem;
 }
 
-
 @keyframes updownsticksleft {
 	0% {
 		bottom: 10em;
@@ -652,6 +658,7 @@ section.how-it-works {
 }
 
 .cutrule {
+	height: 0;
 	width: 100%;
 	outline: none;
 	border: 2px solid var(--primary-color-1);
