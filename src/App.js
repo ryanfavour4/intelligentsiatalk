@@ -1,4 +1,4 @@
-import ReactPlayer from 'react-player'
+// import ReactPlayer from 'react-player'
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 import Nav from './components/Nav';
@@ -33,9 +33,9 @@ function App() {
                   </Route>
               </Switch>
             </div>
-            {/* <div className="react-player-holder"> */}
-              {/* <ReactPlayer width="100%" height="100%" url="https://www.youtube-nocookie.com/embed/KzHzGCSPED4"/> */}
-            {/* </div> */}
+            {/* <div className="react-player-holder">
+              <ReactPlayer width="100%" height="100%" url="https://www.youtube-nocookie.com/embed/KzHzGCSPED4"/>
+            </div> */}
         </div>
     </Router>
   );

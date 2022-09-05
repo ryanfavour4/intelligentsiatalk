@@ -22,7 +22,7 @@ const Nav = () => {
 
                     <Link to="/" className="logo-header">
                         <img
-                            src="/images/Logo transparency 1.png"
+                            src="/images/Intelligentsiatalklogo.png"
                             alt="homes for life"
                             className="logo"
                         />

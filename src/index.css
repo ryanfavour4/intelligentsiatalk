@@ -16,6 +16,16 @@ html {
 	overflow-x: hidden;
 }
 
+html::-webkit-scrollbar {
+	background: transparent;
+	width: 0.1px;
+}
+
+html::-webkit-scrollbar-thumb {
+	background: transparent;
+}
+
+
 button:active {
 	outline: none;
 }
@@ -33,13 +43,14 @@ body {
 	width: 100%;
 	overflow-x: hidden;
 	position: relative;
+	padding: 0;
 	height: 100%;
 	background-size: cover;
 }
 
 body::-webkit-scrollbar {
 	background: var(--primary-color-2);
-	width: 9px;
+	width: 7px;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -183,7 +194,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .logo-header .logo {
-	width: 12rem;
+	width: 10rem;
 }
 
 .hb-content {
@@ -224,7 +235,7 @@ body::-webkit-scrollbar-thumb {
 	z-index: 20;
 	background: var(--primary-color-2);
 	height: 100%;
-	transition: all 0.5s ease;
+	transition: all 0.3s ease;
 	transform: translateX(-100vw);
 }
 
@@ -656,7 +667,7 @@ section.how-it-works {
 
 .blue-blade {
 	background: var(--primary-color-2);
-	transform: 	rotate(-15deg) skewX(40deg);
+	transform: rotate(-15deg) skewX(40deg);
 	bottom: -50px;
 	width: 80vw;
 }
@@ -788,6 +799,11 @@ section.how-it-works {
 		rotate: -8deg;
 		bottom: -40px;
 		width: 95vw;
+	}
+
+
+	.cutrule {
+		display: none;
 	}
 
 }

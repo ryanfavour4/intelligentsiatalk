@@ -24,6 +24,7 @@ const Home = () => {
             <Section1/>
             <Wordingswall/>
             <InnovativeWord/>
+            <Wordingswall/>
         </div>
     )
 }
