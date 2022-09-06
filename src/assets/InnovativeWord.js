@@ -1,5 +1,6 @@
 const InnovativeWord = () => {
     return ( 
+        <div className="parent-cut">
         <div className="section-bgblue innovative-bg">
 
             <div className="intelligentsiaBrand-left">
@@ -23,6 +24,7 @@ const InnovativeWord = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
      );
 }

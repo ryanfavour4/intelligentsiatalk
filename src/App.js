@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 import Nav from './components/Nav';
 import Rain from './components/Rain';
+import Footer from './assets/Footer';
 
 import Home from './pages/Home';
 import About from './pages/About';
@@ -36,6 +37,7 @@ function App() {
             {/* <div className="react-player-holder">
               <ReactPlayer width="100%" height="100%" url="https://www.youtube-nocookie.com/embed/KzHzGCSPED4"/>
             </div> */}
+            <Footer/>
         </div>
     </Router>
   );
