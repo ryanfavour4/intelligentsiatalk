@@ -1,7 +1,9 @@
-const Contact = () => {
+import Pagename from "../components/Pagename";
+
+const Contact = ({pagenamebrand="Contact Us"}) => {
     return ( 
-        <div className="Contact">
-            <h1>Contact</h1>
+        <div className="contact">
+            <Pagename  pagenamebrand={pagenamebrand}/>
         </div>
      );
 }
