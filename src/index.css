@@ -242,7 +242,7 @@ body::-webkit-scrollbar-thumb {
 	color: var(--silver);
 	font-weight: 450;
 	letter-spacing: 2px;
-	margin-bottom: 1em;
+	margin: 0.9em 0;
 }
 
 .watch-videos-ul {
@@ -251,22 +251,62 @@ body::-webkit-scrollbar-thumb {
 	line-height: 2.5em;
 	list-style-type: none;
 }
-
+button.accordion-button{
+	padding: 0;
+}
 .watch-videos-ul a {
 	text-decoration: none;
 	color: var(--white);
 	font-weight: 500;
 }
 
-.watch-section {
-	margin-left: 2rem;
+div.accordion-item{
+	border: none;
+	outline: none;
 }
+
+button.accordion-button.collapsed{
+	border: none;
+	outline: none;
+}
+
 
 .first-vav-box {
 	border-bottom: 1px solid var(--primary-color-1);
-	padding: 1.5em 0;
+	padding: 1.5em 1rem 1.5rem 0;
 }
 
+
+.drop_down_accordion{
+	min-width:200% !important;
+}
+
+.accordion-button{
+  background-color: var(--primary-color-2) !important;
+  font-weight: 600;
+  margin:0 !important;
+  border: none !important;
+  color: var(--white) !important;
+}
+
+.accordion_item{
+	background-color:var(--primary-color-2) !important;
+}
+
+.accordion-button.collapsed{
+	box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed){
+	border-bottom: 1px solid var(--primary-color-1) !important;
+    box-shadow: none !important;
+}
+
+.accordion-button.collapsed::after{
+	border-right: 2px solid var(--primary-color-1);
+	border-bottom: 2px solid var(--primary-color-1);
+	color: var(--primary-color-1) !important;
+}
 
 /* SLIDES JS STYLING END */
 
@@ -299,14 +339,14 @@ body::-webkit-scrollbar-thumb {
 	border: 1.5px groove silver;
 	border-radius: 30px;
 	margin: 10px;
-	height: 40px;
+	height: 50px;
 	align-self: center;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 0.83rem;
+	font-size: 0.9rem;
 	position: relative;
-	padding: 0.4em 1rem;
+	padding: 0.4em 2rem;
 	transition: all 0.2s ease;
 	color: var(--white);
 	/* color here */
@@ -701,6 +741,77 @@ section.how-it-works {
 
 
 
+
+
+/* Subcribemail js  */
+
+.mail_subscribe_div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: var(--white);
+	background: var(--primary-color-2);
+	padding: 2em 0;
+}
+
+.subscribe_mail_box{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.mail_subscribe_heading{
+	text-align: center;
+	line-height: 180%;
+	max-width: 22em;
+}
+
+
+
+.subscribeInput{
+	width: 200px;
+	height: 30px;
+	border-radius:5px 0 0 5px;
+	font-size: 1.1rem;
+	margin:20px 0;
+	padding: 0 10px;
+}
+
+.subscribeInput:active{
+	outline: none;
+	border: none;
+}
+
+.subscribeButton{
+	width: 100px;
+	border: none;
+	height: 30px;
+	background: var(--primary-color-1);
+	color: var(--white);
+	font-weight: 600;
+	margin:20px 0;
+	cursor: pointer;
+	border-radius: 0 5px 5px 0;
+}
+
+
+
+.noSpams{
+	display: block;
+	margin-top: -10px;
+}
+/* Subcribemail js end */
+
+
+
+
+
+
+
+
+
 /* FOOTER JS END*/
 
 
@@ -822,12 +933,6 @@ footer {
 		display: flex;
 	}
 
-	/* 
-	.inner-word-writeup{
-		display: flex;
-		flex-direction: row;
-		width: 1000px;
-	} */
 	.section-bgblue {
 		display: flex;
 		flex-direction: row-reverse;
@@ -868,184 +973,3 @@ footer {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-/* ABOUT HOME PAGE */
-
-.pagenamebrand-flex{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	color: var(--white);
-	padding: 2em 0;
-}
-
-.pagenameh1{
-	font-family: var(--serif-font);
-	font-weight: bolder;
-	font-size: 2.2em;
-	position: relative;
-}
-
-.pagenameh1::after{
-	content: '';
-	width: 300px;
-	display: block;
-	border: 2px solid var(--primary-color-1);
-}
-
-.pagenameh1::before{
-	content: '';
-	width: 150px;
-	display: block;
-	border: 2px solid var(--primary-color-2);
-	position: absolute;
-	bottom: 0;
-	transition: 2s ease;
-	animation: moveLR 2s linear infinite;
-}
-
-@keyframes moveLR {
-	0%{
-		left: 0%;
-	}
-	10%{
-		left: 10%;
-	}	
-	20%{
-		left: 20%;
-	}
-	30%{
-		left: 30%;
-	}
-	40%{
-		left: 40%;
-	}
-	50%{
-		left: 50%;
-	}
-	60%{
-		left: 40%;
-	}
-	70%{
-		left: 30%;
-	}
-	80%{
-		left: 20%;
-	}
-	90%{
-		left: 10%;
-	}
-	100%{
-		left: 0%;
-	}
-}
-
-.small-side-logo{
-	width: 4em;
-}
-
-.aboutustext{
-	background: var(--primary-color-2);
-	padding: 5px 3px;
-	color: var(--white);
-}
-
-.header-aboutus-text{
-	display: flex;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
-	border-bottom: 1px groove var(--primary-color-1);
-	margin: 1em 0;
-}
-
-.header-aboutus-text h2{
-	margin: 0.5rem;
-}
-
-.ourmissionicon{
-	font-size: 2em;
-	margin: 0.5rem;
-}
-
-.paragraph-section2,.paragraph-section1{
-	line-height: 180%;
-	margin: 30px 0;
-	font-weight: 600;
-}
-
-.react-player-holder-abtpage{
-	width: 100%;
-	max-width: 700px;
-	padding: 0;
-	border: 5px groove var(--primary-color-1);
-	border-radius: 8px;
-}
-
-.know-more{
-	font-family: var(--serif-font);
-	font-weight: bolder;
-	font-size: 1.8em;
-	position: relative;
-	margin: 1.5rem 0;
-	color: var(--white);
-	width: 300px;
-}
-
-.know-more::after{
-	content: '';
-	width: 200px;
-	display: block;
-	border: 2px solid var(--primary-color-1);
-}
-
-.know-more::before{
-	content: '';
-	width: 	70px;
-	display: block;
-	border: 2px solid var(--primary-color-2);
-	position: absolute;
-	bottom: 0;
-	transition: 2s ease;
-	animation: moveLR 2s linear infinite;
-	animation-delay: 13s;
-}
-
-.vid-about-us-description{
-	color: var(--white);
-	line-height: 180%;
-	margin: 30px 0;
-	font-weight: 600;
-}
-
-
-
-
-
-
-
-
-
-/* media queries for about page */
-
-
-@media screen and (min-width:950px) {
-	.vid-descvid{
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 0 3em;
-	}
-}
-
-
-/* ABOUT HOME PAGE */
-
-

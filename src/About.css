@@ -1,0 +1,169 @@
+
+/* ABOUT HOME PAGE */
+
+.pagenamebrand-flex{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: var(--white);
+	padding: 2em 0;
+}
+
+.pagenameh1{
+	font-family: var(--serif-font);
+	font-weight: bolder;
+	font-size: 2.2em;
+	position: relative;
+}
+
+.pagenameh1::after{
+	content: '';
+	width: 200px;
+	display: block;
+	border: 2px solid var(--primary-color-1);
+}
+
+.pagenameh1::before{
+	content: '';
+	width: 100px;
+	display: block;
+	border: 2px solid var(--primary-color-2);
+	position: absolute;
+	bottom: 0;
+	transition: 2s ease;
+	animation: moveLR 2s linear infinite;
+}
+
+@keyframes moveLR {
+	0%{
+		left: 0%;
+	}
+	10%{
+		left: 10%;
+	}	
+	20%{
+		left: 20%;
+	}
+	30%{
+		left: 30%;
+	}
+	40%{
+		left: 40%;
+	}
+	50%{
+		left: 50%;
+	}
+	60%{
+		left: 40%;
+	}
+	70%{
+		left: 30%;
+	}
+	80%{
+		left: 20%;
+	}
+	90%{
+		left: 10%;
+	}
+	100%{
+		left: 0%;
+	}
+}
+
+.small-side-logo{
+	width: 4em;
+}
+
+.aboutustext{
+	background: var(--primary-color-2);
+	padding: 5px 3px;
+	color: var(--white);
+}
+
+.header-aboutus-text{
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 1px groove var(--primary-color-1);
+	margin: 1em 0;
+}
+
+.header-aboutus-text h2{
+	margin: 0.5rem;
+}
+
+.ourmissionicon{
+	font-size: 2em;
+	margin: 0.5rem;
+}
+
+.paragraph-section2,.paragraph-section1{
+	line-height: 180%;
+	margin: 30px 0;
+	font-weight: 600;
+}
+
+.react-player-holder-abtpage{
+	width: 100%;
+	max-width: 700px;
+	padding: 0;
+	border: 5px groove var(--primary-color-1);
+	border-radius: 8px;
+}
+
+.know-more{
+	font-family: var(--serif-font);
+	font-weight: bolder;
+	font-size: 1.8em;
+	position: relative;
+	margin: 1.5rem 0;
+	color: var(--white);
+	width: 300px;
+}
+
+.know-more::after{
+	content: '';
+	width: 150px;
+	display: block;
+	border: 2px solid var(--primary-color-1);
+}
+
+.know-more::before{
+	content: '';
+	width: 	40px;
+	display: block;
+	border: 2px solid var(--primary-color-2);
+	position: absolute;
+	bottom: 0;
+	transition: 2s ease;
+	animation: moveLR 2s linear infinite;
+	animation-delay: 13s;
+}
+
+.vid-about-us-description{
+	color: var(--white);
+	line-height: 180%;
+	margin: 30px 0;
+	font-weight: 600;
+}
+
+.vid-descvid{
+	margin-bottom: 1em;
+}
+
+
+
+/* media queries for about page */
+
+
+@media screen and (min-width:950px) {
+	.vid-descvid{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 0 3em;
+	}
+}
+
+
+/* ABOUT HOME PAGE END*/

@@ -3,9 +3,10 @@ import { useState, useEffect } from "react";
 import Loadscreen from "../components/Loadscreen";
 
 import Header from "../assets/Header";
-import Section1 from "../assets/Section1";
 import Wordingswall from "../assets/Wordingswall";
 import InnovativeWord from "../assets/InnovativeWord";
+import Aboutusvidexp from "../assets/Aboutusvidexp";
+import Subscribemail from "../components/Subcribemail";
 
 const Home = () => {
 
@@ -21,10 +22,10 @@ const Home = () => {
         <div className="intelligentsia-talk">
             <Loadscreen loadscreen={loadscreen}/>
             <Header/>
-            <Section1/>
-            <Wordingswall/>
             <InnovativeWord/>
             <Wordingswall/>
+            <Aboutusvidexp/>
+            <Subscribemail/>
         </div>
     )
 }

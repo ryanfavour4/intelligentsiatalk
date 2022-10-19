@@ -7,7 +7,7 @@ const Aboutusvidexp = () => {
             <div className="container">
                 <div className="needtoknowbox">
                     <h2 className="know-more">
-                        Need to know more<i>!</i>
+                        Intelligentsia Talk CEO
                     </h2>
                   <div className="vid-descvid">
                         <div className="react-player-holder-abtpage">

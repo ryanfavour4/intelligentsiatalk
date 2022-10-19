@@ -1,5 +1,8 @@
 import Wordings from "../components/Wordings";
 
+
+// mapping of words quotes  
+
 const Wordingswall = () => {
   return (
     <div className="flex-slide-box">

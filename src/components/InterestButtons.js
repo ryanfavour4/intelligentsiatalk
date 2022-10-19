@@ -12,143 +12,58 @@ const InterestButtons = ({ btnstate, changeToFalse }) => {
     } else {
       return null;
     }
-    // console.log(e.target.checked, btnstate, e.target.id);
   };
 
   return (
     <>
-      <label htmlFor="Design" className="subject-btn">
+      <label htmlFor="About" className="subject-btn">
         {" "}
         <input
           type="radio"
           name="topic"
-          id="Design"
+          id="About"
           onChange={(e) => pickedTopic(e)}
-          value={"Design"}
+          value={"About"}
         />{" "}
-        Design
+        About
       </label>
-      <label htmlFor="Business" className="subject-btn">
+      
+      <label htmlFor="Video" className="subject-btn">
         {" "}
         <input
           type="radio"
           name="topic"
-          id="Business"
+          id="Video"
           onChange={(e) => pickedTopic(e)}
-          value={"Business"}
+          value={"Video"}
         />{" "}
-        Business
+        Video
       </label>
-      <label htmlFor="Social change" className="subject-btn">
+
+      <label htmlFor="Events" className="subject-btn">
         {" "}
         <input
           type="radio"
           name="topic"
-          id="Social change"
+          id="Events"
           onChange={(e) => pickedTopic(e)}
-          value={"Social change"}
+          value={"Events"}
         />{" "}
-        Social change
+        Events
       </label>
-      <label htmlFor="Health" className="subject-btn">
+      
+      <label htmlFor="Wall" className="subject-btn">
         {" "}
         <input
           type="radio"
           name="topic"
-          id="Health"
+          id="Wall"
           onChange={(e) => pickedTopic(e)}
-          value={"Health"}
+          value={"Wall"}
         />{" "}
-        Health
+         Intelligentsia Wall
       </label>
-      <label htmlFor="Nature" className="subject-btn">
-        {" "}
-        <input
-          type="radio"
-          name="topic"
-          id="Nature"
-          onChange={(e) => pickedTopic(e)}
-          value={"Nature"}
-        />{" "}
-        Nature
-      </label>
-      <label htmlFor="The future" className="subject-btn">
-        {" "}
-        <input
-          type="radio"
-          name="topic"
-          id="The future"
-          onChange={(e) => pickedTopic(e)}
-          value={"The future"}
-        />{" "}
-        The future
-      </label>
-      <label htmlFor="Communication" className="subject-btn">
-        {" "}
-        <input
-          type="radio"
-          name="topic"
-          id="Communication"
-          onChange={(e) => pickedTopic(e)}
-          value={"Communication"}
-        />{" "}
-        Communication
-      </label>
-      <label htmlFor="Activism" className="subject-btn">
-        {" "}
-        <input
-          type="radio"
-          name="topic"
-          id="Activism"
-          onChange={(e) => pickedTopic(e)}
-          value={"Activism"}
-        />{" "}
-        Activism
-      </label>
-      <label htmlFor="Child development" className="subject-btn">
-        {" "}
-        <input
-          type="radio"
-          name="topic"
-          id="Child development"
-          onChange={(e) => pickedTopic(e)}
-          value={"Child development"}
-        />{" "}
-        Child development
-      </label>
-      <label htmlFor="Personal growth" className="subject-btn">
-        {" "}
-        <input
-          type="radio"
-          name="topic"
-          id="Personal growth"
-          onChange={(e) => pickedTopic(e)}
-          value={"Personal growth"}
-        />{" "}
-        Personal growth
-      </label>
-      <label htmlFor="Humanity" className="subject-btn">
-        {" "}
-        <input
-          type="radio"
-          name="topic"
-          id="Humanity"
-          onChange={(e) => pickedTopic(e)}
-          value={"Humanity"}
-        />{" "}
-        Humanity
-      </label>
-      <label htmlFor="Society" className="subject-btn">
-        {" "}
-        <input
-          type="radio"
-          name="topic"
-          id="Society"
-          onChange={(e) => pickedTopic(e)}
-          value={"Society"}
-        />{" "}
-        Society
-      </label>
+
     </>
   );
 };
